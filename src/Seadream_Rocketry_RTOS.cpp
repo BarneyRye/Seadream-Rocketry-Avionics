@@ -75,7 +75,7 @@ QueueHandle_t logQueue;
 char logFilename[15];
 
 //Double Buffers for data logging
-data_struct buffer1[MAX_BUFFER_LINES]; // Struct of Arrays to hold data buffers
+data_struct buffer1[MAX_BUFFER_LINES]; // Array of structs to hold data buffers
 data_struct buffer2[MAX_BUFFER_LINES];
 bool useBuffer1 = true;   // Active buffer flag
 uint8_t bufferIndex = 0;  // Index for current buffer
@@ -269,12 +269,12 @@ void audio_start(uint32_t start_time, bool *audio_on) { //Checks if it's time to
 
 void takeoff_detection(bool *takeoff) { //Detects takeoff based on accelerometer data
   if (useBuffer1){
-    if (buffer1.altitude[bufferIndex]-buffer1.altiude[0] > 10){ //If altitude has increased by more than 10m since start
+    if (buffer1[bufferIndex].altitude-buffer1[0].altitude > 10){ //If altitude has increased by more than 10m since start
       *takeoff = true; //Sets takeoff flag to true
     }
   }
   else{
-    if (buffer2.altitude[bufferIndex]-buffer2.altiude[0] > 10){ //If altitude has increased by more than 10m since start
+    if (buffer2[bufferIndex].altitude-buffer2[0].altitude > 10){ //If altitude has increased by more than 10m since start
       *takeoff = true; //Sets takeoff flag to true
     }
   }
