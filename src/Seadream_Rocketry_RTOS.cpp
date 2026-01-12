@@ -87,7 +87,7 @@ void getBufferLine(char *line, data_struct data_buffer); //Converts data struct 
 void char_buffer_write(uint8_t count, data_struct data_buffer, char data_char_buffer[][MAX_BUFFER_LENGTH]); //Writes line to array of char buffers
 void audio_start(uint32_t start_time, bool *audio_on); //Checks if it's time to start audio playback
 void logRate_reduce(uint32_t *log_rate, bool *reduced, uint32_t loop_start, bool takeoff); //Checks if it's time to reduce log rate and reduces it
-void takeoff_detection(bool *takeoff); //Detects takeoff based on accelerometer data
+void takeoff_detection(bool *takeoff, float initial_altitude); //Detects takeoff based on accelerometer data
 
 //FreeRTOS Tasks
 void SensorAudioTask(void *pvParameters); //Core 1 to handle sensor reading and audio playback
@@ -152,22 +152,20 @@ void setup() {
 void loop() {
   //Nothing here, all handled by FreeRTOS tasks
 }
-
 //Sensor and Audio Task
 void SensorAudioTask(void *pvParameters) {
   static bool audio_on = false; //Audio playback flag
-  static bool takeoff = false;
+  static bool takeoff = false; //Takeoff detected flag
   static uint32_t log_rate = 1000 / initial_log_rate; //Sets initial log rate in ms, converts from Hz
   static bool reduced = false; //Log rate reduced flag
   static uint32_t last_log = 0; //Last log time
+  static float initial_altitude = 0.0f; //Initial altitude at startup, used for takeoff detection, value gotten after first data colelction
+  static bool first_run = false; //Flag to indicate first run of data collection got intial altitude
   static uint32_t loop_start = millis(); //Loop start time
 
   for (;;) { //Infinite loop for task
     //Takeoff Detection
-    if (!takeoff) {//Calls takeoff detection function to update takeoff flag
-      takeoff_detection(&takeoff);
-      loop_start = millis(); //Reset loop start time untill takeoff detected
-    }
+
     //Audio Playback
     if (!audio_on) {audio_start(loop_start, &audio_on);} //If audio isn't on, check if it's time to start and start if so
     if (audio_on) { //If audio is on, call audio loop to keep playing
@@ -214,8 +212,14 @@ void SensorAudioTask(void *pvParameters) {
         bufferIndex = 0; //Resets buffer index
         useBuffer1 = !useBuffer1;  //Swap active buffer to fill
       }
+      initial_altitude = data.altitude; //Initial altitude at startup
+      first_run = true;
     }
-
+    
+    if (!takeoff && first_run) {//Calls takeoff detection function to update takeoff flag
+      takeoff_detection(&takeoff,initial_altitude);
+      loop_start = millis(); //Reset loop start time untill takeoff detected
+    }
     vTaskDelay(1);  //Yield to other tasks
   }
 }
@@ -267,14 +271,14 @@ void audio_start(uint32_t start_time, bool *audio_on) { //Checks if it's time to
   }
 }
 
-void takeoff_detection(bool *takeoff) { //Detects takeoff based on accelerometer data
+void takeoff_detection(bool *takeoff, float initial_altitude) { //Detects takeoff based on accelerometer data
   if (useBuffer1){
-    if (buffer1[bufferIndex].altitude-buffer1[0].altitude > 10){ //If altitude has increased by more than 10m since start
+    if (buffer1[bufferIndex].altitude - initial_altitude > 10){ //If altitude has increased by more than 10m since start
       *takeoff = true; //Sets takeoff flag to true
     }
   }
   else{
-    if (buffer2[bufferIndex].altitude-buffer2[0].altitude > 10){ //If altitude has increased by more than 10m since start
+    if (buffer2[bufferIndex].altitude - initial_altitude > 10){ //If altitude has increased by more than 10m since start
       *takeoff = true; //Sets takeoff flag to true
     }
   }
