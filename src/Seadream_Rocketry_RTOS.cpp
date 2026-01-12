@@ -164,8 +164,6 @@ void SensorAudioTask(void *pvParameters) {
   static uint32_t loop_start = millis(); //Loop start time
 
   for (;;) { //Infinite loop for task
-    //Takeoff Detection
-
     //Audio Playback
     if (!audio_on) {audio_start(loop_start, &audio_on);} //If audio isn't on, check if it's time to start and start if so
     if (audio_on) { //If audio is on, call audio loop to keep playing
@@ -215,9 +213,9 @@ void SensorAudioTask(void *pvParameters) {
       initial_altitude = data.altitude; //Initial altitude at startup
       first_run = true;
     }
-    
-    if (!takeoff && first_run) {//Calls takeoff detection function to update takeoff flag
-      takeoff_detection(&takeoff,initial_altitude);
+
+    if (!takeoff && first_run) { //Calls takeoff detection function to update takeoff flag
+      takeoff_detection(&takeoff, initial_altitude);
       loop_start = millis(); //Reset loop start time untill takeoff detected
     }
     vTaskDelay(1);  //Yield to other tasks
