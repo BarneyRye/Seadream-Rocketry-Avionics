@@ -28,12 +28,15 @@ Adafruit BMP280
 #include <queue.h> //FreeRTOS queue libary for inter-task communication
 
 //Config pins
-#define I2C_SDA 8 //I2C pins
-#define I2C_SCL 9
-#define Audio_DIN 25  //Audio AMP pins
-#define Audio_BCLK 26
-#define Audio_LRC 27
-#define SD_CS 5 //SD card CS pin
+#define I2C_SDA 12 //I2C pins
+#define I2C_SCL 13
+#define Audio_DIN 14  //Audio AMP pins
+#define Audio_BCLK 15
+#define Audio_LRC 16
+#define SPI_SCK 2 //SPI/SD card pins
+#define SPI_MOSI 3
+#define SPI_MISO 1
+#define SPI_CS 4
 
 //Log Rates
 #define initial_log_rate 50    // Hz, initial logging rate
@@ -104,7 +107,7 @@ void setup() {
   Wire.setClock(400000); //Set I2C clock frequency to 400kHz
 
   //SPI
-  SPI.begin(); //Begin SPI for SD card
+  SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI); //Begin SPI for SD card
 
   //Accelerometer and Gyro
   if (!imu.begin_I2C()) { Serial.println(F("Failed to find Accelerometer")); } //Begins I2C connection to Accel/Gyro, if fails, print failure to serial
@@ -126,7 +129,7 @@ void setup() {
   if (!sht4.begin(&Wire)) { Serial.println(F("Temperature/Humidity sensor not found")); } //Begins I2C connection to Temp/Humidity sensor, if fails, print failure to serial
 
   //SD CARD
-  if (!SD.begin(SD_CS)) { //Begins SD card connection, if fails, print failure to serial
+  if (!SD.begin(SPI_CS)) { //Begins SD card connection, if fails, print failure to serial
     Serial.println(F("SD Card not found"));
   } 
   else {
