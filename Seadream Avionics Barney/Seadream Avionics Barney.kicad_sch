@@ -7929,6 +7929,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 170.18) (xy 64.77 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7086119-b70a-4d4a-960a-6b9a77581dca")
+	)
+	(wire
+		(pts
 			(xy 139.7 80.01) (xy 149.86 80.01)
 		)
 		(stroke
@@ -8076,6 +8086,16 @@
 			(type default)
 		)
 		(uuid "eb6a6a56-fe12-4aa7-83c4-fe183910f529")
+	)
+	(wire
+		(pts
+			(xy 69.85 167.64) (xy 64.77 167.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb75a765-9bd9-464b-89cd-4477ea79f8c0")
 	)
 	(wire
 		(pts
@@ -8266,6 +8286,26 @@
 			(justify right bottom)
 		)
 		(uuid "22d25656-cb1a-4cfd-9e70-226025b37678")
+	)
+	(label "OUT+"
+		(at 64.77 170.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "238e6924-f85c-4aa6-ad20-338a52d104c0")
+	)
+	(label "OUT-"
+		(at 64.77 167.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "238e6924-f85c-4aa6-ad20-338a52d104c0")
 	)
 	(label "D-"
 		(at 69.85 123.19 0)
@@ -13632,7 +13672,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
-		(at 69.85 170.18 0)
+		(at 74.93 170.18 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13641,7 +13681,7 @@
 		(dnp no)
 		(uuid "a390d91b-9aec-4e22-b915-66758f846b05")
 		(property "Reference" "J3"
-			(at 71.882 167.894 0)
+			(at 76.962 167.894 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13649,7 +13689,7 @@
 			)
 		)
 		(property "Value" "B2B-PH-K-S(LF)(SN)"
-			(at 71.374 172.466 0)
+			(at 76.454 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13657,7 +13697,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical"
-			(at 69.85 170.18 0)
+			(at 74.93 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13666,7 +13706,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 69.85 170.18 0)
+			(at 74.93 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13675,7 +13715,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
-			(at 69.85 170.18 0)
+			(at 74.93 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
