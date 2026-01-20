@@ -611,7 +611,7 @@
       "plot": "Gerbers/",
       "pos_files": "P&P/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Seadream Avionics Barney.step",
       "svg": "",
       "vrml": ""
     },
