@@ -256,6 +256,7 @@ void SensorAudioTask(void *pvParameters) {
           useBuffer1 = !useBuffer1;  //Swap active buffer to fill
         }
       }
+      /*
       else {
         Serial.println(F("SD Card not connected, skipping logging")); //If SD card not connected, print message to serial
         static uint8_t sd_reconnect_attempts = 0; //Counter for SD reconnect attempts
@@ -268,6 +269,7 @@ void SensorAudioTask(void *pvParameters) {
         }
         sd_reconnect_attempts++; //Increase reconnect attempts counter
       }
+      */
       initial_altitude = data.altitude; //Initial altitude at startup
       first_run = true;
     }

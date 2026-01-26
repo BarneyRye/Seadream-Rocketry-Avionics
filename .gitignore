@@ -17,3 +17,6 @@ Thumbs.db
 
 # Secrets
 wifi_secrets.h
+
+# Logs
+*.csv
