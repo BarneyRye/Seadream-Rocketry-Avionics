@@ -83,6 +83,12 @@ data_struct buffer2[MAX_BUFFER_LINES];
 bool useBuffer1 = true;   // Active buffer flag
 uint8_t bufferIndex = 0;  // Index for current buffer
 
+//COnnection Flags
+bool SD_connected = false; //SD card connection flag
+bool imu_connected = false; //IMU connection flag
+bool bmp_connected = false; //BMP280 connection flag
+bool sht4_connected = false; //SHT4x connection flag
+
 //Fuunction Prototypes
 void getNextLogFilename(char* name); //Generate next log filename if log1.csv exists, make log2.csv etc
 void getData(data_struct *data_buffer); //Read sensors and fill data struct
@@ -99,35 +105,43 @@ void LoggingTask(void *pvParameters); //Core 0 to handle logging data to SD card
 //Setup
 void setup() {
   Serial.begin(115200); //Begin serial communication
-  while(!Serial){delay(10);} //Wait for serial to connect
+  delay(1000); //Wait for serial to initialise
   Serial.println(F("Initialising...")); //Print initialising message
 
   //I2C
   Wire.begin(I2C_SDA, I2C_SCL); //Connect I2C to specified pins
   Wire.setClock(100000); //Set I2C clock frequency to 100kHz
+  delay(1000); //Wait for I2C to stabilise
 
   //SPI
   SPI.begin(SPI_SCK, SPI_MISO, SPI_MOSI); //Begin SPI for SD card
 
   //Accelerometer and Gyro
-  if (!imu.begin_I2C()) { Serial.println(F("Failed to find Accelerometer")); } //Begins I2C connection to Accel/Gyro, if fails, print failure to serial
+  if (!imu.begin_I2C()) {Serial.println(F("Failed to find Accelerometer")); } //Begins I2C connection to Accel/Gyro, if fails, print failure to serial
+  else {
   imu.setAccelDataRate(LSM6DS_RATE_52_HZ); //Sets accelerometer data rate to 52Hz
   imu.setAccelRange(LSM6DSO32_ACCEL_RANGE_32_G); //Sets accelerometer range to 32G
   imu.setGyroDataRate(LSM6DS_RATE_52_HZ); //Sets gyro data rate to 52Hz
   imu.setGyroRange(LSM6DS_GYRO_RANGE_2000_DPS); //Sets gyro range to 2000 degrees per second
-
+  imu_connected = true; //Sets IMU connected flag to true
+  }
+  
   //Barometer
-  if (!bmp.begin(0x76)) { Serial.println(F("Failed to find Barometer")); } //Begins I2C connection to Barometer, if fails, print failure to serial
+  if (!bmp.begin(0x77)) { Serial.println(F("Failed to find Barometer")); } //Begins I2C connection to Barometer, if fails, print failure to serial
   else{
     bmp.setSampling(Adafruit_BMP280::MODE_NORMAL,
                     Adafruit_BMP280::SAMPLING_X1,
                     Adafruit_BMP280::SAMPLING_X1,    
                     Adafruit_BMP280::FILTER_OFF,  
                     Adafruit_BMP280::STANDBY_MS_1); 
+    bmp_connected = true; //Sets BMP280 connected flag to true
   }
   //Temperature and Humidity Sensor
   if (!sht4.begin(&Wire)) { Serial.println(F("Temperature/Humidity sensor not found")); } //Begins I2C connection to Temp/Humidity sensor, if fails, print failure to serial
-
+  else {
+    sht4_connected = true; //Sets SHT4x connected flag to true
+  
+  }
   //SD CARD
   if (!SD.begin(SPI_CS)) { //Begins SD card connection, if fails, print failure to serial
     Serial.println(F("SD Card not found"));
@@ -140,6 +154,8 @@ void setup() {
       //Write CSV header line
       f.println("Time_ms,Humidity_%,Temp_C,Temp_BMP_C,Pressure_kPa,Altitude_M,Accel_X,Accel_Y,Accel_Z,Gyro_X,Gyro_Y,Gyro_Z");
       f.close(); //Closes file
+      SD_connected = true; //Sets SD connected flag to true
+      Serial.println(F("Log file created")); //Prints success message to serial
     } else {
       Serial.println(F("Failed to open log file")); //Prints failure message to serial
     }
@@ -200,26 +216,57 @@ void SensorAudioTask(void *pvParameters) {
       last_log = now; //Sets last log time to now
 
       //Print data to serial for debugging
+      /*
       Serial.print("Time: "); Serial.print(data.time);
       Serial.print(" ms, Humidity: "); Serial.print(data.humidity); Serial.print(" %, Temp: "); Serial.print(data.temp_sens); Serial.print(" C");
       Serial.print(", Temp_BMP: "); Serial.print(data.temp_bmp); Serial.print(" C, Pressure: "); Serial.print(data.pressure); Serial.print(" kPa, Altitude: "); Serial.print(data.altitude); Serial.print(" m");
       Serial.print(", Accel (m/s^2): X "); Serial.print(data.ax); Serial.print(" Y "); Serial.print(data.ay); Serial.print(" Z "); Serial.print(data.az);
       Serial.print(", Gyro (deg/s): X "); Serial.print(data.gx); Serial.print(" Y "); Serial.print(data.gy); Serial.print(" Z "); Serial.println(data.gz); 
+      */
 
-      //Fill active buffer
-      if (useBuffer1) { //If flag is true, fill buffer1
-        buffer1[bufferIndex] = data; //Copy data struct to buffer1 at current index
-      } else { //Else fill buffer2
-        buffer2[bufferIndex] = data; //Copy data struct to buffer2 at current index
+      //CSV format for easy import to analysis software
+      Serial.print(data.time); Serial.print(","); 
+      Serial.print(data.humidity); Serial.print(","); 
+      Serial.print(data.temp_sens); Serial.print(","); 
+      Serial.print(data.temp_bmp); Serial.print(",");
+      Serial.print(data.pressure); Serial.print(","); 
+      Serial.print(data.altitude); Serial.print(","); 
+      Serial.print(data.ax); Serial.print(","); 
+      Serial.print(data.ay); Serial.print(","); 
+      Serial.print(data.az); Serial.print(","); 
+      Serial.print(data.gx); Serial.print(","); 
+      Serial.print(data.gy); Serial.print(","); 
+      Serial.println(data.gz);
+
+
+      if (SD_connected) { //If SD card connected, proceed to buffer data for logging
+        //Fill active buffer
+        if (useBuffer1) { //If flag is true, fill buffer1
+          buffer1[bufferIndex] = data; //Copy data struct to buffer1 at current index
+        } else { //Else fill buffer2
+          buffer2[bufferIndex] = data; //Copy data struct to buffer2 at current index
+        }
+        bufferIndex++; //Increases buffer index
+
+        //If buffer full, send to logging task
+        if (bufferIndex >= MAX_BUFFER_LINES) { //If buffer index >= max buffer lines and SD card connected
+          bool readyBuffer = useBuffer1;  // Sets flag for which buffer is ready
+          xQueueSend(logQueue, &readyBuffer, portMAX_DELAY); //Sends ready buffer flag to logging task
+          bufferIndex = 0; //Resets buffer index
+          useBuffer1 = !useBuffer1;  //Swap active buffer to fill
+        }
       }
-      bufferIndex++; //Increases buffer index
-
-      //If buffer full, send to logging task
-      if (bufferIndex >= MAX_BUFFER_LINES) {
-        bool readyBuffer = useBuffer1;  // Sets flag for which buffer is ready
-        xQueueSend(logQueue, &readyBuffer, portMAX_DELAY); //Sends ready buffer flag to logging task
-        bufferIndex = 0; //Resets buffer index
-        useBuffer1 = !useBuffer1;  //Swap active buffer to fill
+      else {
+        Serial.println(F("SD Card not connected, skipping logging")); //If SD card not connected, print message to serial
+        static uint8_t sd_reconnect_attempts = 0; //Counter for SD reconnect attempts
+        if (sd_reconnect_attempts > 10) {
+          if (SD.begin(SPI_CS)) { //Try to reconnect to SD card
+            SD_connected = true; //If successful, set SD connected flag to true
+            Serial.println(F("SD Card reconnected")); //Print reconnection message to serial
+          }
+          sd_reconnect_attempts = 0; //Reset reconnect attempts counter
+        }
+        sd_reconnect_attempts++; //Increase reconnect attempts counter
       }
       initial_altitude = data.altitude; //Initial altitude at startup
       first_run = true;
@@ -275,8 +322,12 @@ void getNextLogFilename(char *name) { //Gets next available log filename
 
 void audio_start(uint32_t start_time, bool *audio_on) { //Checks if it's time to start audio playback
   if (millis() - start_time >= (song_start_time * 1000)) { //If time since start >= song start time
-    audio.connecttoFS(SD, SONG_PATH); //Connect to song file on SD card and start playing
+    if(audio.connecttoFS(SD, SONG_PATH)) { //Connect to song file on SD card and start playing
     *audio_on = true; //Set audio on flag to true
+    }
+    else {
+      Serial.println(F("Failed to open song file")); //Print failure message to serial
+    }
   }
 }
 
