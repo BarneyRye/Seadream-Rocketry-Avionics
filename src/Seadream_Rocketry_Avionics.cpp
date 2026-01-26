@@ -216,15 +216,16 @@ void SensorAudioTask(void *pvParameters) {
       last_log = now; //Sets last log time to now
 
       //Print data to serial for debugging
-      /*
+      ///*
       Serial.print("Time: "); Serial.print(data.time);
       Serial.print(" ms, Humidity: "); Serial.print(data.humidity); Serial.print(" %, Temp: "); Serial.print(data.temp_sens); Serial.print(" C");
       Serial.print(", Temp_BMP: "); Serial.print(data.temp_bmp); Serial.print(" C, Pressure: "); Serial.print(data.pressure); Serial.print(" kPa, Altitude: "); Serial.print(data.altitude); Serial.print(" m");
       Serial.print(", Accel (m/s^2): X "); Serial.print(data.ax); Serial.print(" Y "); Serial.print(data.ay); Serial.print(" Z "); Serial.print(data.az);
       Serial.print(", Gyro (deg/s): X "); Serial.print(data.gx); Serial.print(" Y "); Serial.print(data.gy); Serial.print(" Z "); Serial.println(data.gz); 
-      */
+      //*/
 
       //CSV format for easy import to analysis software
+      /*
       Serial.print(data.time); Serial.print(","); 
       Serial.print(data.humidity); Serial.print(","); 
       Serial.print(data.temp_sens); Serial.print(","); 
@@ -237,7 +238,7 @@ void SensorAudioTask(void *pvParameters) {
       Serial.print(data.gx); Serial.print(","); 
       Serial.print(data.gy); Serial.print(","); 
       Serial.println(data.gz);
-
+      */
 
       if (SD_connected) { //If SD card connected, proceed to buffer data for logging
         //Fill active buffer
@@ -256,7 +257,7 @@ void SensorAudioTask(void *pvParameters) {
           useBuffer1 = !useBuffer1;  //Swap active buffer to fill
         }
       }
-      /*
+      
       else {
         Serial.println(F("SD Card not connected, skipping logging")); //If SD card not connected, print message to serial
         static uint8_t sd_reconnect_attempts = 0; //Counter for SD reconnect attempts
@@ -269,7 +270,7 @@ void SensorAudioTask(void *pvParameters) {
         }
         sd_reconnect_attempts++; //Increase reconnect attempts counter
       }
-      */
+      
       initial_altitude = data.altitude; //Initial altitude at startup
       first_run = true;
     }
