@@ -9,7 +9,6 @@
 /*
 Adafruit_LSM6DS
 Adafruit SHT4x and dependencies
-ESP32 AudioI2S
 Adafruit BMP280
 */
 
@@ -23,16 +22,12 @@ Adafruit BMP280
 #include <Adafruit_BMP280.h>//Barometer libary
 #include <SD.h> //SD card libary
 #include <SPI.h> //SPI libary
-#include <Audio.h> //Audio libary
 #include <FreeRTOS.h> //FreeRTOS base libary to allow for multitasking
 #include <queue.h> //FreeRTOS queue libary for inter-task communication
 
 //Config pins
 #define I2C_SDA 12 //I2C pins
 #define I2C_SCL 13
-#define Audio_DIN 14  //Audio AMP pins
-#define Audio_BCLK 15
-#define Audio_LRC 16
 #define SPI_SCK 2 //SPI/SD card pins
 #define SPI_MOSI 3
 #define SPI_MISO 1
@@ -45,15 +40,10 @@ Adafruit BMP280
 #define MAX_BUFFER_LINES 5     // No. of data logs per buffer
 #define MAX_BUFFER_LENGTH 150  // Length of char buffer lines
 
-//Song timer
-#define song_start_time 180  //s, time to start song after apogee
-#define SONG_PATH "/Homecoming.mp3" //Name of song file on SD card
-
 //Object creating from libaries
 Adafruit_SHT4x sht4 = Adafruit_SHT4x(); //Temperature and Humidity sensor
 Adafruit_LSM6DSO32 imu; //Accelerometer and Gyro
 Adafruit_BMP280 bmp; //Barometer
-Audio audio; //Audio player
 
 //Data Struct
 typedef struct { //struct to store sensor data
@@ -94,13 +84,12 @@ void getNextLogFilename(char* name); //Generate next log filename if log1.csv ex
 void getData(data_struct *data_buffer); //Read sensors and fill data struct
 void getBufferLine(char *line, data_struct data_buffer); //Converts data struct to string line for block writing to SD card
 void char_buffer_write(uint8_t count, data_struct data_buffer, char data_char_buffer[][MAX_BUFFER_LENGTH]); //Writes line to array of char buffers
-void audio_start(bool apogee, bool *audio_on); //Checks if it's time to start audio playback
 void logRate_reduce(uint32_t *log_rate, bool *reduced, bool apogee); //Checks if it's time to reduce log rate and reduces it
 void takeoff_detection(bool *takeoff, float initial_altitude); //Detects takeoff based on accelerometer data
 void apogee_detection(bool *apogee, bool takeoff); //Detects apogee based on altitude data
 
 //FreeRTOS Tasks
-void SensorAudioTask(void *pvParameters); //Core 1 to handle sensor reading and audio playback
+void SensorTask(void *pvParameters); //Core 1 to handle sensor reading
 void LoggingTask(void *pvParameters); //Core 0 to handle logging data to SD card
 
 //Setup
@@ -162,15 +151,11 @@ void setup() {
     }
   }
 
-  //Audio
-  audio.setPinout(Audio_BCLK, Audio_LRC, Audio_DIN); //Connects audio AMP to specified pins
-  audio.setVolume(10);  // 1-21, Sets volume
-
   //FreeRTOS Queue
   logQueue = xQueueCreate(2, sizeof(bool)); //Create queue to hold 2 buffer ready flags
 
   //Create FreeRTOS Tasks
-  xTaskCreatePinnedToCore(SensorAudioTask, "SensorAudioTask", 4096, NULL, 1, NULL, 1);  // Core 1 for sensors and audio
+  xTaskCreatePinnedToCore(SensorTask, "SensorTask", 4096, NULL, 1, NULL, 1);  // Core 1 for sensors and audio
   xTaskCreatePinnedToCore(LoggingTask, "LoggingTask", 4096, NULL, 1, NULL, 0);          // Core 0 for logging
 
   Serial.println(F("Finished Initialising")); //Print finished initialising message
@@ -181,8 +166,7 @@ void loop() {
   //Nothing here, all handled by FreeRTOS tasks
 }
 //Sensor and Audio Task
-void SensorAudioTask(void *pvParameters) {
-  static bool audio_on = false; //Audio playback flag
+void SensorTask(void *pvParameters) {
   static bool takeoff = false; //Takeoff detected flag
   static bool apogee = false; //Apogee detected flag
   static bool landed = false; //Landed flag
@@ -197,15 +181,6 @@ void SensorAudioTask(void *pvParameters) {
 
     //Apogee Detection
     if (!apogee) apogee_detection(&apogee, takeoff); //If apogee not detected yet, call apogee detection function to update apogee flag
-
-    //Audio Playback
-    if (!audio_on) {audio_start(apogee, &audio_on);} //If audio isn't on, check if it's time to start and start if so
-    if (audio_on) { //If audio is on, call audio loop to keep playing
-      audio.loop();
-      if (!audio.isRunning()) { //If audio has finished playing
-        audio.connecttoFS(SD, SONG_PATH); //Restart song
-      }
-    }
 
     //Log Rate Reduction
     if (!reduced) logRate_reduce(&log_rate, &reduced, takeoff); //If log rate hasn't been reduced yet, check if it's time to reduce it and reduce if so
@@ -246,7 +221,6 @@ void SensorAudioTask(void *pvParameters) {
       Serial.print(data.gy); Serial.print(","); 
       Serial.println(data.gz);
       */
-      ///*
       if (SD_connected) { //If SD card connected, proceed to buffer data for logging
         //Fill active buffer
         if (useBuffer1) { //If flag is true, fill buffer1
@@ -277,7 +251,6 @@ void SensorAudioTask(void *pvParameters) {
         }
         sd_reconnect_attempts++; //Increase reconnect attempts counter
       }
-      //*/
 
       initial_altitude = data.altitude; //Initial altitude at startup
       first_run = true;
@@ -328,21 +301,6 @@ void getNextLogFilename(char *name) { //Gets next available log filename
       return; //Exit function
     }
     index++; //Increase index and try again
-  }
-}
-
-void audio_start(bool apogee, bool *audio_on) { //Checks if it's time to start audio playback
-  static uint32_t apogee_time = 0; //Start time for audio playback timer
-  if (apogee && apogee_time == 0) { //If apogee detected
-    apogee_time = millis(); //Sets apogee time to current time
-  }
-  if (millis() - apogee_time >= (song_start_time * 1000) && apogee_time != 0) { //If apogee detected and time since apogee >= song start time
-    if(audio.connecttoFS(SD, SONG_PATH)) { //Connect to song file on SD card and start playing
-    *audio_on = true; //Set audio on flag to true
-    }
-    else {
-      Serial.println(F("Failed to open song file")); //Print failure message to serial
-    }
   }
 }
 

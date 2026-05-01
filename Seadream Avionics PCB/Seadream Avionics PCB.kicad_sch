@@ -6298,6 +6298,12 @@
 		(uuid "1772dffa-f7b8-4121-8b06-b0c9dc8730be")
 	)
 	(junction
+		(at 20.32 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17ddb0b8-3da5-42e0-8157-1995d1d2e73f")
+	)
+	(junction
 		(at 72.39 24.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6620,10 +6626,6 @@
 	(no_connect
 		(at 39.37 49.53)
 		(uuid "adcd119b-c824-44f7-99cf-d77e0bd25759")
-	)
-	(no_connect
-		(at 232.41 27.94)
-		(uuid "b241b7a0-c4f0-4008-9d3e-d05722e8a6d3")
 	)
 	(no_connect
 		(at 69.85 29.21)
@@ -6959,6 +6961,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 30.48) (xy 227.33 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c9378c-2185-479c-b69c-ffa1fe0880d5")
+	)
+	(wire
+		(pts
 			(xy 78.74 53.34) (xy 82.55 53.34)
 		)
 		(stroke
@@ -7116,16 +7128,6 @@
 			(type default)
 		)
 		(uuid "43c5a401-fea4-4eef-818e-f02c852c6c91")
-	)
-	(wire
-		(pts
-			(xy 26.67 179.07) (xy 26.67 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4522b9a8-bb9d-4146-be37-d8ba159fa89e")
 	)
 	(wire
 		(pts
@@ -7399,7 +7401,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 172.72) (xy 29.21 172.72)
+			(xy 19.05 172.72) (xy 20.32 172.72)
 		)
 		(stroke
 			(width 0)
@@ -7469,16 +7471,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 177.8) (xy 29.21 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8592ab3f-1e81-497e-b8fd-36ad2e5e4301")
-	)
-	(wire
-		(pts
 			(xy 91.44 43.18) (xy 86.36 43.18)
 		)
 		(stroke
@@ -7496,6 +7488,16 @@
 			(type default)
 		)
 		(uuid "88e7dde4-119f-484f-b4d1-4f0f9a44580e")
+	)
+	(wire
+		(pts
+			(xy 20.32 177.8) (xy 20.32 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b8fea45-7215-4af9-baf1-95969508a150")
 	)
 	(wire
 		(pts
@@ -7586,6 +7588,16 @@
 			(type default)
 		)
 		(uuid "98213610-d850-4195-a972-6d51e002a473")
+	)
+	(wire
+		(pts
+			(xy 20.32 172.72) (xy 29.21 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "997ad9c6-e6da-43b5-8673-bb3847110ca4")
 	)
 	(wire
 		(pts
@@ -7899,6 +7911,16 @@
 	)
 	(wire
 		(pts
+			(xy 227.33 27.94) (xy 232.41 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d030d222-2cb3-4344-a69d-043cc07ca44e")
+	)
+	(wire
+		(pts
 			(xy 218.44 77.47) (xy 226.06 77.47)
 		)
 		(stroke
@@ -7976,6 +7998,16 @@
 			(type default)
 		)
 		(uuid "da29b3f8-fbba-4cd1-9140-58aacdb47204")
+	)
+	(wire
+		(pts
+			(xy 20.32 177.8) (xy 29.21 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da3901f2-8a2f-4311-8465-0549c64c8c4b")
 	)
 	(wire
 		(pts
@@ -11066,6 +11098,72 @@
 			(project "Seadream Avionics Barney"
 				(path "/3eab51f1-e840-4fcb-ae14-6a5e4ec9e628"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 229.87 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "463f09ed-5b55-4418-99bf-555a7f54508a")
+		(property "Reference" "#PWR036"
+			(at 229.87 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "367533fd-edb2-4224-b5f1-d2ec7e325fbb")
+		)
+		(instances
+			(project "Seadream Avionics PCB"
+				(path "/3eab51f1-e840-4fcb-ae14-6a5e4ec9e628"
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -14249,6 +14347,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 227.33 30.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa3ab9a1-f01a-4e12-b768-20bd46938dd4")
+		(property "Reference" "#PWR040"
+			(at 227.33 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 227.33 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 227.33 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d524ff5b-7731-45b1-aa58-07b27775524d")
+		)
+		(instances
+			(project "Seadream Avionics PCB"
+				(path "/3eab51f1-e840-4fcb-ae14-6a5e4ec9e628"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 104.14 177.8 0)
 		(unit 1)
@@ -14532,72 +14696,6 @@
 			(project "Seadream Avionics Barney"
 				(path "/3eab51f1-e840-4fcb-ae14-6a5e4ec9e628"
 					(reference "C7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 26.67 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ba4f4ef6-f4bf-4a8c-a4a5-e43cdd8bd017")
-		(property "Reference" "#PWR036"
-			(at 26.67 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 26.67 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 26.67 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 26.67 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dc299508-d8dc-4038-ba31-fe123fcd04fa")
-		)
-		(instances
-			(project "Seadream Avionics Barney"
-				(path "/3eab51f1-e840-4fcb-ae14-6a5e4ec9e628"
-					(reference "#PWR036")
 					(unit 1)
 				)
 			)

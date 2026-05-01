@@ -180,7 +180,6 @@
 	(net 59 "unconnected-(U2-IO26-Pad26)")
 	(net 60 "unconnected-(U2-IO33-Pad28)")
 	(net 61 "/MISO")
-	(net 62 "unconnected-(U1-SDO-Pad5)")
 	(footprint "Capacitor_SMD:C_0402_1005Metric"
 		(layer "F.Cu")
 		(uuid "047228e2-e18a-4b32-a308-473eaa0cc912")
@@ -209,7 +208,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -221,7 +220,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -233,10 +232,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2a737292-d944-4323-8641-e2fdbbd6eca9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/bded42a4-afd9-4d37-80fe-89d6775eea0f")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -408,7 +420,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707107920437248"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -420,7 +432,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -432,10 +444,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C19702"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2278f476-6bee-40fb-ab7d-9c9df2966011")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7d9ac059-23da-4a7b-b88b-8dde63103607")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -607,7 +632,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707107920437248"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -619,7 +644,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -631,10 +656,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C19702"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c5f3058f-3036-4b42-a49b-d1b0f454fa9b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/d1d10c93-6de4-4a4c-8ced-779506fb3134")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 -0.51)
@@ -806,7 +844,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588881989415931904"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -818,7 +856,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0402WGJ0103TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -830,10 +868,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C25531"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a45d7a12-e947-4f63-9d85-2278d65f433d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/7bae1e8b-1fc9-4149-8e68-33e3852c5643")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -1004,7 +1055,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588907595537399808"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1016,7 +1067,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "SHT40-AD1B-R3"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1145,9 +1196,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C2848306"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b56451bc-fc21-442b-838d-3f82bccbefc2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/a9d3c321-5a72-4311-9d2f-9bc71dc4ccbb")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.7 -0.75)
@@ -1352,7 +1416,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707107920437248"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1364,7 +1428,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1376,10 +1440,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C19702"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c0d40f14-73cf-4e41-ad7f-10acf48c5ee8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/bb009c20-ce03-46db-a41c-418e44aa6873")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -1551,7 +1628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550724080677908480"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1563,7 +1640,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "NCD0805R1"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1588,10 +1665,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C84256"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39000d89-3152-48cb-88f7-7a33a5015fbe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/05d3c920-12a5-4a0b-ba81-1e7b915d6610")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.685 0.96)
@@ -1783,7 +1873,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588881905890156544"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1795,7 +1885,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "BMP280"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1963,9 +2053,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C83291"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f2c37b3-479c-4e51-b897-0865908e9c89")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/62b4fc18-a4b5-4d18-86d4-ec760fe65d7f")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1 1.35)
@@ -2122,9 +2225,9 @@
 			(at -0.8 0.975 270)
 			(size 0.5 0.35)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 62 "unconnected-(U1-SDO-Pad5)")
+			(net 1 "GND")
 			(pinfunction "SDO")
-			(pintype "bidirectional+no_connect")
+			(pintype "bidirectional")
 			(solder_mask_margin 0.102)
 			(uuid "42e1dd26-34d1-4c31-b020-d58e133e2420")
 		)
@@ -2188,7 +2291,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706178210742272"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2200,7 +2303,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0603WAF2200T5E"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2212,10 +2315,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C22962"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9fb39a9b-24a2-449d-9efa-de7ce8b6b79a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/6eafc51c-b11f-485c-b398-bac0b00bed7a")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.237258 0.5225)
@@ -2389,7 +2505,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://documentation.espressif.com/esp32-s3-mini-1_mini-1u_datasheet_en.pdf"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2402,7 +2518,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "ESP32-S3-MINI-1U-N8"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2584,9 +2700,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C2980299"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "94253ee1-e89a-40a0-850d-d98ecb73adc7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/77753db1-b22b-40f5-8030-b5dfe88b1bea")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -7.8 7.8)
@@ -3352,7 +3481,6 @@
 			(roundrect_rratio 0)
 			(chamfer_ratio 0.33)
 			(chamfer top_left)
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "d464bffa-9971-40d3-9262-670eec223468")
 		)
@@ -3361,7 +3489,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "e1a98026-68f8-4511-8a96-2c77ec136e57")
 		)
@@ -3370,7 +3497,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "97e65f9d-5baf-4aa4-9e8d-d186683047cd")
 		)
@@ -3379,7 +3505,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "58455920-820b-4179-bbe5-50be39cff447")
 		)
@@ -3388,7 +3513,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "ebec52cd-336b-434f-a8cc-bcaf36ed5501")
 		)
@@ -3397,7 +3521,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "e244a754-0b81-45fb-a982-6cfdaffd22a7")
 		)
@@ -3406,7 +3529,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "6c0bfe3a-f16e-4c2e-a38f-eea1713b1264")
 		)
@@ -3415,7 +3537,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "8febc93e-771f-4cfb-a6ec-fa45a9d6edbd")
 		)
@@ -3424,7 +3545,6 @@
 			(size 1.2 1.2)
 			(property pad_prop_heatsink)
 			(layers "F.Cu" "F.Mask" "F.Paste")
-			(net 1 "GND")
 			(zone_connect 2)
 			(uuid "e0951514-1af8-47b1-b46e-975ac434153f")
 		)
@@ -3514,7 +3634,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588926227138138112"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3526,7 +3646,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LSM6DSO32TR"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3707,9 +3827,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C1864162"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9346e18f-63e1-441d-82c3-c4b9d49ef25e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/fbc897e5-444b-4f7b-af16-3812cb33184f")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_poly
 			(pts
@@ -4188,7 +4321,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4200,7 +4333,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4212,10 +4345,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b7aae867-a4f0-4ea8-8043-71bc9cd6ca3d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/57ab2cc7-c716-4047-aa3e-5a0253914f38")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -4359,12 +4505,12 @@
 			)
 		)
 	)
-	(footprint "TYPE-C_16PIN_2MD__073_:SHOUHAN_TYPE-C_16PIN_2MD__073_"
+	(footprint "2FOOTPRINTS:SHOUHAN_TYPE-C_16PIN_2MD__073_"
 		(layer "F.Cu")
 		(uuid "63a6e9ad-064f-40cd-a818-67a486301241")
 		(at 153.45 97.5)
 		(property "Reference" "J2"
-			(at -5.95 1.75 0)
+			(at -1.85 -7.58 0)
 			(layer "F.SilkS")
 			(uuid "af36ae6f-25a1-48e6-b389-febee299cf72")
 			(effects
@@ -4374,7 +4520,7 @@
 				)
 			)
 		)
-		(property "Value" "C393939"
+		(property "Value" "TYPE-C16PIN"
 			(at 14.025 -6.01 0)
 			(layer "F.Fab")
 			(uuid "f7b4ac1c-b8a7-4719-8885-bbe51a9a39e7")
@@ -4385,7 +4531,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588893971980423168"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4397,7 +4543,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TYPE-C16PIN"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4414,7 +4560,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d62b4bf0-a2d1-4c97-a9a6-3369cfd2e8fd")
+			(uuid "e3831ea7-2414-46c3-aa43-ececd9268b30")
 			(effects
 				(font
 					(size 1 1)
@@ -4427,7 +4573,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "187662e7-ec77-44bf-99e3-46f007f8f1ce")
+			(uuid "554bf293-1c62-4f54-8c0f-77a7853aa6ed")
 			(effects
 				(font
 					(size 1 1)
@@ -4440,7 +4586,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "52ed27ce-be37-4049-9582-369315eeef68")
+			(uuid "0366af38-5bbf-44cd-bb0e-79420067bc3e")
 			(effects
 				(font
 					(size 1 1)
@@ -4453,7 +4599,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1681c5d7-f343-47c9-8c6b-d4e6e6c3be07")
+			(uuid "2ea5b1cd-2091-4334-9d63-6c176e83b606")
 			(effects
 				(font
 					(size 1 1)
@@ -4466,7 +4612,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f010ee1d-39bb-4ba7-b6a7-582950becc61")
+			(uuid "ce820146-657b-432b-8ed7-13ac7c06a228")
 			(effects
 				(font
 					(size 1 1)
@@ -4479,7 +4625,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fb79a868-201d-467b-bd02-48829cb37954")
+			(uuid "a4052d24-54b2-459e-aa17-8a5238db9736")
 			(effects
 				(font
 					(size 1 1)
@@ -4492,7 +4638,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "521b86c4-5445-4116-b3af-0fd80035f4e3")
+			(uuid "92e0f8be-3459-4ca4-8289-a6b253a243de")
 			(effects
 				(font
 					(size 1 1)
@@ -4505,7 +4651,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0383dc26-48b6-48e5-a0fa-dcea8a12cef6")
+			(uuid "ca823468-feaf-42e1-84b8-7365438f1ecc")
 			(effects
 				(font
 					(size 1 1)
@@ -4518,7 +4664,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d57a8ce0-fbc3-4794-8bf9-4d9bfbd966db")
+			(uuid "38e292ae-9f0b-4c7e-bb26-7fe2f8f9bc60")
 			(effects
 				(font
 					(size 1 1)
@@ -4531,7 +4677,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5196621e-18e7-4fc1-b1f8-0192d8f10a9b")
+			(uuid "cc7085ea-c4f3-4b18-95c4-83df8665c514")
 			(effects
 				(font
 					(size 1 1)
@@ -4544,7 +4690,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9e4c645b-8c84-42b7-be3e-e13d4a0b5562")
+			(uuid "b7db5f50-7045-4a3b-b691-b53d80eeb86f")
 			(effects
 				(font
 					(size 1 1)
@@ -4557,7 +4703,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b3b8dea9-16c9-4ddb-8baa-3b88c69924f2")
+			(uuid "26dc6fb4-5c11-4550-818d-0b8698e912c1")
 			(effects
 				(font
 					(size 1 1)
@@ -4570,7 +4716,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e67059c5-9b78-4ec5-95e8-f8a4a6267197")
+			(uuid "893d272b-d3f8-492c-bed1-51f9a09fc74c")
 			(effects
 				(font
 					(size 1 1)
@@ -4583,7 +4729,20 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dbe4caa1-05dc-4efb-b5cb-c62256e853aa")
+			(uuid "349fa2e0-8de1-4034-85f6-3893da7c50ad")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Part NO." "C393939"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3ded561e-3f2c-4582-b14a-4e4cc216169e")
 			(effects
 				(font
 					(size 1 1)
@@ -4593,7 +4752,7 @@
 		)
 		(path "/9c1663db-2fdc-4b5b-9e0b-8bda948f57d7")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_poly
 			(pts
@@ -4605,7 +4764,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "d9b27bea-5132-485d-b2be-ff766d3f27da")
+			(uuid "e77e5900-9eb5-47dc-b693-8c43d934ed4a")
 		)
 		(fp_poly
 			(pts
@@ -4617,7 +4776,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "faf6b810-285b-4565-adc8-b098b90ba831")
+			(uuid "cef69395-7663-4933-9c7d-d9cd2af2256a")
 		)
 		(fp_poly
 			(pts
@@ -4629,7 +4788,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "297f46e1-d02e-4957-9da6-d74133cc6766")
+			(uuid "9653eaab-127d-432c-93c4-91194e3e9f3e")
 		)
 		(fp_poly
 			(pts
@@ -4641,7 +4800,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "dc6097f5-caa7-486c-a236-488e5eb5fe45")
+			(uuid "2e8f90be-17a1-4258-9760-05c999bfdc2a")
 		)
 		(fp_poly
 			(pts
@@ -4653,7 +4812,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "28621b16-40ab-4fdb-b364-be0260643543")
+			(uuid "854824be-01a4-4a03-a2bc-df4d20c41e1c")
 		)
 		(fp_poly
 			(pts
@@ -4665,7 +4824,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "fdae775c-d829-41c4-acaa-5bab7d6adfcb")
+			(uuid "37c1a7b1-d6ce-4529-886b-6b223f7f0737")
 		)
 		(fp_poly
 			(pts
@@ -4677,7 +4836,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "fee71feb-2a70-42fa-9001-89b323e2b6ed")
+			(uuid "24c75bdc-fc34-4ec2-9eb7-e966948655e0")
 		)
 		(fp_poly
 			(pts
@@ -4689,7 +4848,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "56cac248-bd23-4bab-9374-b872b0e94ca8")
+			(uuid "f7fbb7eb-c06c-43aa-b501-e2eebf07a6e1")
 		)
 		(fp_poly
 			(pts
@@ -4701,7 +4860,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "137fc270-a103-4775-9696-ae047edea7f3")
+			(uuid "c3660ce7-b96c-4798-b9f1-0465481d8494")
 		)
 		(fp_poly
 			(pts
@@ -4713,7 +4872,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "a9ff5e59-8e43-43ae-9767-38dfadb33982")
+			(uuid "54949941-b7b8-47ab-b464-c4276fca3a07")
 		)
 		(fp_poly
 			(pts
@@ -4725,7 +4884,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "d15b688f-5048-440b-9990-7f88055e94d8")
+			(uuid "8e05e229-59cc-4137-81b6-22aba4926b62")
 		)
 		(fp_poly
 			(pts
@@ -4737,7 +4896,7 @@
 			)
 			(fill yes)
 			(layer "F.Mask")
-			(uuid "371dbb5f-3abd-4459-9cff-e91486f0f5cc")
+			(uuid "6ac4176a-ec4f-4855-a6d1-65d77c63f876")
 		)
 		(fp_line
 			(start -4.47 -1.675)
@@ -4747,7 +4906,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "4b51078f-1d55-4d45-922f-bf2bc873ccc4")
+			(uuid "93299071-9f49-412d-b6d3-10792aad005c")
 		)
 		(fp_line
 			(start -4.47 3.675)
@@ -4757,7 +4916,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "39a54078-201b-4338-8b0e-f7a4b5526972")
+			(uuid "c93292ee-b13c-4309-b1fd-47a05ba8064a")
 		)
 		(fp_line
 			(start -4.47 3.675)
@@ -4767,7 +4926,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "e38fb592-5d70-445d-a00f-e0f31078376e")
+			(uuid "af334053-b884-4aad-9cbe-7eed442fce5f")
 		)
 		(fp_line
 			(start 4.47 -1.675)
@@ -4777,7 +4936,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "8881269a-c646-4202-b5b1-cf355f9b67ad")
+			(uuid "4b9b93dc-6d39-4a7c-b693-6803048ad42b")
 		)
 		(fp_line
 			(start 4.47 3.675)
@@ -4787,7 +4946,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "089881fc-58f3-4ed6-b96a-26d53f03d690")
+			(uuid "6f860541-7af4-4aa7-bb3f-b38acc800c71")
 		)
 		(fp_circle
 			(center -3.2 -4.925)
@@ -4798,7 +4957,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "6e71c054-31fa-4cd7-8268-2c3db3b61610")
+			(uuid "b09f00ad-74cc-42b5-bb6d-760aa2b98731")
 		)
 		(fp_line
 			(start -5.07 -4.495)
@@ -4808,7 +4967,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "76db3538-45f3-446c-912c-026f74439e14")
+			(uuid "4ccc1e9b-5395-4123-979e-ba8ca1943db3")
 		)
 		(fp_line
 			(start -5.07 3.925)
@@ -4818,7 +4977,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "b03082b0-65e7-4a20-99e2-8c8dc99185fc")
+			(uuid "2ae412d3-4ca2-41a0-98d6-ce650b4a1dd9")
 		)
 		(fp_line
 			(start 5.07 -4.495)
@@ -4828,7 +4987,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "73dc269b-3f91-45a2-b870-2c36a5353b4e")
+			(uuid "97835ff3-fc64-4a71-be91-60323e836e80")
 		)
 		(fp_line
 			(start 5.07 3.925)
@@ -4838,7 +4997,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "d7e69d08-0f62-4485-8e30-01dcdd45e261")
+			(uuid "9012c48d-b68d-4771-aafb-ca0482ee5816")
 		)
 		(fp_line
 			(start -4.47 -3.675)
@@ -4848,7 +5007,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "3dc1429e-11cc-46c4-9a83-4bf0c7c98983")
+			(uuid "9a930031-aa14-47b7-a6dd-31b7ebc6e739")
 		)
 		(fp_line
 			(start -4.47 3.675)
@@ -4858,7 +5017,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "b878cf96-5759-4103-a5ca-5ccea9b1c101")
+			(uuid "ca8e1796-3b12-4ab7-b04e-b100b29f005a")
 		)
 		(fp_line
 			(start 4.47 -3.675)
@@ -4868,7 +5027,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "133e2cb6-e4f0-441d-a1da-fb4d4b165f69")
+			(uuid "211104a2-ad76-4781-a897-59ecb9ec129d")
 		)
 		(fp_line
 			(start 4.47 3.675)
@@ -4878,7 +5037,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "69f10f31-3be3-4e1a-b2f3-c7455ce0cc13")
+			(uuid "cc4db142-b320-4727-84ae-19176a37eb5f")
 		)
 		(fp_circle
 			(center -3.2 -4.925)
@@ -4889,21 +5048,21 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "d66c22ad-fed3-413f-b6fb-1f1f5154042f")
+			(uuid "b998fa36-11ea-4eaa-a164-efdbac03c0ce")
 		)
 		(pad "" np_thru_hole circle
 			(at -2.89 -2.605)
 			(size 0.65 0.65)
 			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
-			(uuid "876ff8a9-d2f4-42d3-a7ec-bc99eb32c695")
+			(uuid "57b1f7bc-848a-427e-8806-83aaf116740d")
 		)
 		(pad "" np_thru_hole circle
 			(at 2.89 -2.605)
 			(size 0.65 0.65)
 			(drill 0.65)
 			(layers "*.Cu" "*.Mask")
-			(uuid "16f2858b-a08b-453a-9afc-fee620e826c4")
+			(uuid "0653d63e-87d8-4469-8870-6fcfe1659f5f")
 		)
 		(pad "A1_B12" smd rect
 			(at -3.2 -3.67)
@@ -5062,17 +5221,6 @@
 			(uuid "ed2dc71e-08b8-4177-83c0-0a3c792e7039")
 		)
 		(embedded_fonts no)
-		(model "${KIPRJMOD}/Parts/3D/TYPE-C_16PIN_2MD__073_.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz -90 -0 -0)
-			)
-		)
 	)
 	(footprint "Resistor_SMD:R_0402_1005Metric"
 		(layer "F.Cu")
@@ -5102,7 +5250,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705941367193600"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5114,7 +5262,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0402WGF4701TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5126,10 +5274,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C25900"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1af41aee-0b06-4b73-9bfd-87d0b01fa871")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/698911fb-df85-418a-8015-df420b205836")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -5301,7 +5462,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5313,7 +5474,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5325,10 +5486,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c72efea3-aa4c-4d8a-a1d3-6dcf9e6cfcf8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/b94274b1-1c3b-4791-89c2-b71a60c2a0e2")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -5500,7 +5674,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5512,7 +5686,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5524,10 +5698,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03bf5f65-562d-4474-bdc6-e42db23af958")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1c02dc43-32be-44e4-a7de-4e3dce631b42")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -5699,7 +5886,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706036003409920"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5711,7 +5898,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0402WGF5101TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5723,10 +5910,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C25905"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c09e2da9-db2c-4f49-86f9-0da4f8e3b691")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/9c3c010d-9e57-481e-8df6-26b68c7bb7ee")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -5886,7 +6086,7 @@
 				)
 			)
 		)
-		(property "Value" "C91145"
+		(property "Value" "TF-01A"
 			(at 1.1176 1.4276 0)
 			(layer "F.Fab")
 			(uuid "654785d1-07ba-48a2-8c9e-49528bd085dd")
@@ -5897,7 +6097,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588894212661764096"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5909,7 +6109,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "TF-01A"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -6025,9 +6225,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C91145"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b1ffa05e-2a93-4c08-82b6-a0afe629be0c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/c1a5d986-70a1-40da-a505-21bc9bf75dbc")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 7.4 1.5)
@@ -6395,7 +6608,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707174974914560"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6407,7 +6620,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05A105KA5NQNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6419,10 +6632,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C52923"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "827ece77-4d1c-46d1-aa6a-b13faac4822d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3579f7d2-feaf-4908-96ca-ca8fa341dd38")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -6592,7 +6818,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588917637593751552"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6604,7 +6830,7 @@
 				)
 			)
 		)
-		(property "Description" "Switch, single pole double throw"
+		(property "Description" "SSSS810701"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6616,9 +6842,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C97433"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9d94ab1c-0ed3-48b3-a480-d2415d34079d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/e6f01983-26d1-4ac0-b389-03d6630b3cf0")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(fp_line
 			(start 3.524 0.445)
 			(end 3.524 0.465)
@@ -7038,7 +7277,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588886693302161408"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7050,7 +7289,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "MAX98357AETE_T"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7179,9 +7418,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C910544"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1ed551fd-1320-4625-b73e-8fe4d97663c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/5e77990d-3a41-4f4c-baf4-3c5045df84ca")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1.5 1.5)
@@ -7415,7 +7667,7 @@
 			(size 0.84 0.27)
 			(layers "F.Cu" "F.Mask" "F.Paste")
 			(roundrect_rratio 0.125)
-			(net 1 "GND")
+			(net 2 "+3.3V")
 			(pinfunction "SD_MODE")
 			(pintype "input")
 			(solder_mask_margin 0.102)
@@ -7592,7 +7844,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706178210742272"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7604,7 +7856,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0603WAF2200T5E"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -7616,10 +7868,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C22962"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dc0a1a2f-8ca6-437c-acfe-d4d42dd4b83b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/700005e7-57be-457e-84e7-e9089ed91926")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.237258 -0.5225)
@@ -7789,7 +8054,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8586198736901459968"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7801,7 +8066,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LD1117S33TR"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7943,9 +8208,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C86781"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0a72d8e9-59d5-403f-a81d-c59a450277c1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/3617a235-8a62-435a-8c46-f1594ac65378")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1.5 -3.25)
@@ -8215,7 +8493,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588881989415931904"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8227,7 +8505,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0402WGJ0103TCE"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8239,10 +8517,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C25531"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "03db8e4a-952b-4a95-bd24-205c02e632d9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/e9fb2ada-fd78-47d7-a225-a69509a38192")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -8414,7 +8705,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8426,7 +8717,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8438,10 +8729,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d34a2ea3-68a2-4715-a9f9-4adc74509f98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/7595569a-2fd7-4e55-b417-407efc47fab0")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -8613,7 +8917,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588889744620572672"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8625,7 +8929,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" "B2B-PH-K-S(LF)(SN)"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8637,10 +8941,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C131337"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "36bbbf62-dd9d-4c8e-8b32-6a1e549746c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8cea0e69-74d3-4f56-82da-9845972ea3d3")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start -1.11 -2.11)
@@ -9067,7 +9384,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706036003409920"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9079,7 +9396,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0402WGF5101TCE"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9091,10 +9408,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C25905"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "4ee63eeb-4bcb-4e1b-906e-e86b6ad3bd57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/1513e7c8-76cf-41ab-a731-c703fe9044a2")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 0.38)
@@ -9266,7 +9596,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9278,7 +9608,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9290,10 +9620,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "02eb92f8-3e30-4e84-9c4d-c5e59479dd15")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/9bf5e38b-ea5c-46ee-aaa7-a6686377764e")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -9465,7 +9808,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588881989415931904"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9477,7 +9820,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0402WGJ0103TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9489,10 +9832,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C25531"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7458a573-2541-493c-97d1-e7d2735e5fbf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/af842ce8-59be-4c76-9c56-931d526c365e")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -9664,7 +10020,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550724080677908480"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9676,7 +10032,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "NCD0805R1"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9701,10 +10057,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C84256"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a5a83ccc-c26d-45c3-a595-8bbcd7a0bde3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/80a18a68-c4f3-4fbc-afc0-f4110520f48a")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1 -0.96)
@@ -9898,7 +10267,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579705941367193600"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9910,7 +10279,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0402WGF4701TCE"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9922,10 +10291,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C25900"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "53ac13c9-1752-450d-aadb-a03f0cba7e2c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/971a50be-ab86-4c74-91a6-98f1536985b8")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -10097,7 +10479,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707107920437248"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10109,7 +10491,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL10A106KP8NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10121,10 +10503,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C19702"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc6fab01-3667-44e1-bb92-418922b38307")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/1b7f8503-01e6-4779-a74d-4a98b147ed88")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.14058 0.51)
@@ -10296,7 +10691,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10308,7 +10703,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10320,10 +10715,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f512ada-d2f2-4242-88fd-b794f4302808")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/3768ce4e-533f-48f1-b65a-9a6c84ac4d26")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -10495,7 +10903,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588889744620572672"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10507,7 +10915,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x02, script generated"
+		(property "Description" "B2B-PH-K-S(LF)(SN)"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -10519,10 +10927,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C131337"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e9a825aa-a45d-46e6-b8fb-44f33cdc0880")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/a390d91b-9aec-4e22-b915-66758f846b05")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr through_hole)
 		(fp_line
 			(start 4.06 2.91)
@@ -10949,7 +11370,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10961,7 +11382,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10973,10 +11394,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "07ab3461-178a-4e4f-be1e-6c354dfc581a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/2aee3a4c-bf26-4baf-856f-964687b7479f")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 -0.36)
@@ -11148,7 +11582,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706223213461504"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11160,7 +11594,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" "0603WAF3300T5E"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11172,10 +11606,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C23138"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b141b8a2-7ab2-4985-88a1-f9cd464895a3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "R_*")
 		(path "/68880bcc-bb4a-4fb0-b346-77c3aa1f09d1")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.237258 0.5225)
@@ -11347,7 +11794,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579706866429190144"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11359,7 +11806,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL21A226MAQNNNE"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11371,10 +11818,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C45783"
+			(at 0 0 270)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f264ab5a-1116-4d3b-8d60-d9beacb96cfe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/0eafd585-5934-49c2-8a14-8b45a12ce571")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.261252 0.735)
@@ -11546,7 +12006,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8579707269996871680"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11558,7 +12018,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Description" "CL05B104KO5NNNC"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11570,10 +12030,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C1525"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "45dc37bd-d13d-47dc-8ec9-3ad40fbbbed4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "C_*")
 		(path "/5e9dd6c4-f696-4e85-a8f7-03bf90e4deff")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -0.107836 0.36)
@@ -11743,7 +12216,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588916370310369280"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11755,7 +12228,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "KMR221GLFS"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11884,9 +12357,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C72443"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a56434ab-b660-4edf-b10e-8816112e97a5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/0ae22ae5-6a75-4902-9e54-495a01999c2b")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.2 1.4)
@@ -12064,7 +12550,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8550724080677908480"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12076,7 +12562,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "NCD0805R1"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12101,10 +12587,23 @@
 				)
 			)
 		)
+		(property "Part NO." "C84256"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4546ccc-412e-485b-9758-289618626665")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/d5272a96-e919-4bfd-9bec-81efdfefebc9")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start 1 -0.96)
@@ -12296,7 +12795,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://jlcpcb.com/api/file/downloadByFileSystemAccessId/8588886586771845120"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12308,7 +12807,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LD39200PU33R"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -12996,9 +13495,22 @@
 				)
 			)
 		)
+		(property "Part NO." "C222192"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46ca708a-8ecc-4a9d-b1ea-a9a30dc9d3a6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
 		(path "/0b1df7f9-45fb-4ee0-9846-93bc162618a0")
 		(sheetname "/")
-		(sheetfile "Seadream Avionics Barney.kicad_sch")
+		(sheetfile "Seadream Avionics PCB.kicad_sch")
 		(attr smd)
 		(fp_line
 			(start -1.5 -1.5)
@@ -15989,6 +16501,14 @@
 		)
 	)
 	(segment
+		(start 151.8 66.477)
+		(end 151.924 66.601)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "03a7556b-7c89-4f2c-8853-77b4061e402d")
+	)
+	(segment
 		(start 160.5 89.75)
 		(end 161.25 89.75)
 		(width 0.25)
@@ -16147,6 +16667,14 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "1b276844-2285-4cd3-8e93-33a3bad8fe81")
+	)
+	(segment
+		(start 152.976 66.601)
+		(end 153.1 66.477)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "1dde3d39-e9de-4d26-b16c-0a71d73861e1")
 	)
 	(segment
 		(start 164.0702 54.5)
@@ -16333,14 +16861,6 @@
 		(uuid "4468a32e-64b3-40e1-8f40-0d3dfa0c4882")
 	)
 	(segment
-		(start 146.935 79.315)
-		(end 147.5 78.75)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "46bf51c2-4bb9-41e6-bc89-2454817b71e6")
-	)
-	(segment
 		(start 164.1 74.5)
 		(end 163.05 74.5)
 		(width 0.2)
@@ -16525,14 +17045,6 @@
 		(uuid "6bb911b2-4a7e-4620-8e21-0260d5dcb2d1")
 	)
 	(segment
-		(start 146.935 79.95)
-		(end 146.935 80.45)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "6d9b5fcf-7026-4b03-9132-dfad79020019")
-	)
-	(segment
 		(start 147.3875 60.3625)
 		(end 147.75 60)
 		(width 0.4)
@@ -16555,6 +17067,14 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "701b293a-8c3e-41c0-8556-59addf155f10")
+	)
+	(segment
+		(start 153.1 66.477)
+		(end 153.1 66)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "70562139-1ecb-466f-9e0d-dde6d899545c")
 	)
 	(segment
 		(start 151.5 59)
@@ -16619,6 +17139,14 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "7997c9dd-6c71-4cd5-be21-51aedbc2084d")
+	)
+	(segment
+		(start 151.8 66)
+		(end 151.8 66.477)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "7a62c747-4e0a-4f0b-915c-6b4307010989")
 	)
 	(segment
 		(start 163.05 75.2)
@@ -16731,14 +17259,6 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "901b2aad-3fbd-4b1f-bb9d-fdccf75459c5")
-	)
-	(segment
-		(start 146.935 79.95)
-		(end 146.935 79.315)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "913b8994-0003-4ada-a57f-8c35529224b2")
 	)
 	(segment
 		(start 151 60.75)
@@ -16955,14 +17475,6 @@
 		(layer "F.Cu")
 		(net 1)
 		(uuid "beed61d2-afa5-4556-9005-fa416dfa4e11")
-	)
-	(segment
-		(start 146.7 77.95)
-		(end 147.5 78.75)
-		(width 0.2)
-		(layer "F.Cu")
-		(net 1)
-		(uuid "c07b2b83-7b79-4c12-9fc4-d7ecbddf133b")
 	)
 	(segment
 		(start 158.75 84)
@@ -17365,6 +17877,14 @@
 		(uuid "fe73aea6-33c2-4529-bcd8-a120f20ecac2")
 	)
 	(segment
+		(start 151.924 66.601)
+		(end 152.976 66.601)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "ff09fadc-cf56-448e-8cea-12cd84f04113")
+	)
+	(segment
 		(start 157.6 59.25)
 		(end 157.6 58.549265)
 		(width 0.2)
@@ -17655,14 +18175,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 1)
 		(uuid "7f0b1ded-9a7b-4354-9996-df342b4229df")
-	)
-	(via
-		(at 147.5 78.75)
-		(size 0.6)
-		(drill 0.3)
-		(layers "F.Cu" "B.Cu")
-		(net 1)
-		(uuid "7f62b384-4d62-4239-8918-241e48b5110d")
 	)
 	(via
 		(at 165.25 87)
@@ -18102,12 +18614,28 @@
 		(uuid "3a492b19-8e3a-4b02-89cf-d2018567bbec")
 	)
 	(segment
+		(start 147.848 80.443)
+		(end 147.848 80.75)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "3b535261-f075-46ec-8b76-3f31691acb86")
+	)
+	(segment
 		(start 165.75 61.75)
 		(end 165.75 70.25)
 		(width 0.4)
 		(layer "F.Cu")
 		(net 2)
 		(uuid "3bd86016-f342-4203-8d37-d1b53e589ded")
+	)
+	(segment
+		(start 147.355 79.95)
+		(end 147.848 80.443)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "3e925416-83b5-45aa-ae00-b7825d43ea31")
 	)
 	(segment
 		(start 150.926 62.8885)
@@ -18284,6 +18812,14 @@
 		(layer "F.Cu")
 		(net 2)
 		(uuid "6d1df542-7067-46b1-ac73-8339ec84f5e1")
+	)
+	(segment
+		(start 146.935 79.95)
+		(end 147.355 79.95)
+		(width 0.2)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "6e34540f-3b7a-42e5-a534-e282113f2ed3")
 	)
 	(segment
 		(start 147.648 80.95)
